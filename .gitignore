@@ -1,0 +1,99 @@
+# ==========================================
+# Operating System
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Python Compilation, Cache, and Virtual Environments
+# ==========================================
+# Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv
+.venv/
+venv/
+env/
+ENV/
+
+# Packaging and distribution
+build/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# Testing and linting caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Jupyter Notebook cache (keep .ipynb sources, ignore checkpoints only)
+.ipynb_checkpoints/
+
+# ==========================================
+# HPC / Cluster Jobs and Logs
+# ==========================================
+*.log
+slurm-*.out
+slurm-*.err
+
+# ==========================================
+# Secrets and Environment Config
+# ==========================================
+.env
+.env.*
+!.env.example
+
+# ==========================================
+# Project-Specific Directories and Tiers
+# ==========================================
+# Tiered data hygiene (adhering to pc-pipeline-snakemake and AGENTS.md)
+/data/*
+!/data/README.md
+!/data/dongniao/
+/data/dongniao/*
+!/data/dongniao/synonyms.md
+/processed/
+/results/
+/logs/
+/.snakemake/
+/_ignore/
+
+# Git and helper caches
+.worktrees/
+.paper-craft/cache/
+.epic*
+.conductor*
+ISSUE-*.md
+
+# Durable local evidence retained across pooled remote checkout resets.
+/.preserved/
+
+# Slidev dependencies and generated offline previews
+node_modules/
+/examples/*/preview/
+.slidev/

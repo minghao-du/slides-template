@@ -1,0 +1,17 @@
+{
+  "name": "minghao-slides-template",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "theme-minghao",
+    "examples/minghao"
+  ],
+  "engines": {
+    "node": "^22.18.0 || >=24.11.0"
+  },
+  "scripts": {
+    "dev": "npm run dev --workspace @minghao/slides-example",
+    "build": "npm run build --workspace @minghao/slides-example",
+    "preview": "npm run preview --workspace @minghao/slides-example"
+  }
+}

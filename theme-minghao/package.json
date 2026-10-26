@@ -1,0 +1,38 @@
+{
+  "name": "slidev-theme-minghao",
+  "version": "0.1.0",
+  "description": "Minghao's personal Slidev theme, derived from Seriph",
+  "author": "Minghao",
+  "license": "MIT",
+  "homepage": "https://sli.dev",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "engines": {
+    "node": "^22.18.0 || >=24.11.0",
+    "slidev": ">=53.0.0"
+  },
+  "slidev": {
+    "defaults": {
+      "fonts": {
+        "mono": "PT Mono",
+        "sans": "PT Serif",
+        "serif": "PT Serif",
+        "italic": true,
+        "weights": "400, 700",
+        "provider": "none"
+      }
+    }
+  },
+  "dependencies": {
+    "@slidev/types": "53.0.0",
+    "codemirror-theme-vars": "^0.1.2",
+    "prism-theme-vars": "^0.2.4",
+    "@fontsource/pt-serif": "5.3.0",
+    "@fontsource/pt-mono": "5.3.0"
+  },
+  "contributors": [
+    "Anthony Fu <anthonyfu117@hotmail.com>"
+  ]
+}

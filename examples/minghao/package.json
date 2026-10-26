@@ -1,0 +1,15 @@
+{
+  "name": "@minghao/slides-example",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev example.md",
+    "build": "slidev build example.md --out preview",
+    "preview": "vite preview --outDir preview --host 127.0.0.1 --port 4173 --strictPort"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0",
+    "vite": "^8.3.0",
+    "slidev-theme-minghao": "0.1.0"
+  }
+}
