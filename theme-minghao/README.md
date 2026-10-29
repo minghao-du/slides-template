@@ -20,6 +20,12 @@ themeConfig:
 
 Requires Slidev 53 or later and Node.js 22.18+ (22.x) or 24.11+. Layouts include `cover`, `intro`, `section`, `statement`, `fact`, and `quote`, alongside Slidev's built-in layouts.
 
+## Drawing Shortcut
+
+Press `P` to toggle drawing mode in any presentation using this theme. Press `Esc` to exit drawing mode. Existing strokes remain visible when drawing mode is closed. The theme preserves Slidev's default shortcuts and disables key repeat for this toggle.
+
+The shortcut is defined in [`setup/shortcuts.ts`](./setup/shortcuts.ts). Restart the development server after adding the setup file, or rebuild a static preview to include it.
+
 ## Fonts and Backgrounds
 
 All layouts use Helvetica for Latin text, with Arial as the first fallback. Chinese text uses the bundled **STKaiti Regular v1.02**, followed by system Kai fonts for any missing glyphs. No system font installation is required for STKaiti. PT Mono is bundled through Fontsource for code. Remote font loading is disabled.
