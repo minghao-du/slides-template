@@ -46,7 +46,7 @@ titleBand: false
 ---
 ```
 
-The title area remains when its band is disabled. `cover`, `intro`, `section`, `statement`, `fact`, and `quote`, along with built-in layouts such as `center`, retain their compositions and have no automatic band. Fonts remain unified across layouts.
+The title area remains when its band is disabled. `cover`, `intro`, `section`, `statement`, `fact`, and `quote`, along with `center`, retain their compositions and have no automatic band. Fonts remain unified across layouts.
 
 Override these variables in a deck's `style.css` to tune the design. Values refer to the slide canvas before display scaling:
 
@@ -56,7 +56,7 @@ Override these variables in a deck's `style.css` to tune the design. Values refe
   --slidev-theme-title-band-height: 8px;
   --slidev-theme-title-band-gap: 10px;
   --slidev-theme-title-band-offset-y: -3px;
-  --slidev-theme-content-gap: -2px;
+  --slidev-theme-content-gap: 0px;
   --slidev-theme-content-padding-x: 3.5rem;
   --slidev-theme-content-padding-y: 2.5rem;
   --slidev-theme-title-padding-top: 29px;
@@ -65,9 +65,15 @@ Override these variables in a deck's `style.css` to tune the design. Values refe
 
 The band offset moves only the decoration without changing title or body positions. Negative values move it upward.
 
-The content gap supports signed values. Positive values add padding above the body; negative values move the body upward relative to the title area. The current gap is -2px.
+The content gap supports signed values. Positive values add padding above the body; negative values move the body upward relative to the title area. The current gap is 0px.
 
 The example uses `colorSchema: light`. The current design is validated in light mode; dark mode color adaptation is outside this version's scope.
+
+## Overflow Scrolling
+
+All theme layouts allow vertical scrolling when the body exceeds the available height in browser previews and presentations. The opening top-level title stays fixed. On image layouts, only the text column scrolls; the image stays in place. Slides without an opening title scroll their entire body. Short slides keep their layout and do not show a scrollbar.
+
+Use the mouse wheel or trackpad over the body to scroll. Print and Slidev PDF export keep the original layout and pagination; scrollable content is not expanded into additional PDF pages.
 
 ## Validation and PDF Export
 

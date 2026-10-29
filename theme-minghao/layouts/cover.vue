@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import ScrollableContent from '../components/ScrollableContent'
 import { computed } from 'vue'
 import { handleBackground } from '../layoutHelper'
 
@@ -17,8 +18,8 @@ const style = computed(() => handleBackground(props.background, true))
     class="slidev-layout cover text-center"
     :style="style"
   >
-    <div class="my-auto w-full">
+    <ScrollableContent class="my-auto w-full">
       <slot />
-    </div>
+    </ScrollableContent>
   </div>
 </template>

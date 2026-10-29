@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import ScrollableContent from '../components/ScrollableContent'
+</script>
+
 <template>
   <div class="slidev-layout statement">
-    <div class="my-auto">
+    <ScrollableContent class="my-auto">
       <slot />
-    </div>
+    </ScrollableContent>
   </div>
 </template>

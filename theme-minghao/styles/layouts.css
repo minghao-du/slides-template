@@ -92,7 +92,7 @@
   --slidev-theme-title-band-height: 8px;
   --slidev-theme-title-band-gap: 10px;
   --slidev-theme-title-band-offset-y: -6px;
-  --slidev-theme-content-gap: -2px;
+  --slidev-theme-content-gap: 5px;
   --slidev-theme-content-padding-x: 3.5rem;
   --slidev-theme-content-padding-y: 2.5rem;
   --slidev-theme-title-padding-top: 29px;
@@ -154,4 +154,59 @@
 
 .minghao-content-image {
   min-height: 0;
+}
+
+/* Export mode omits these classes; print media also keeps the original flow. */
+@media screen {
+  .minghao-scroll-main {
+    overflow: hidden;
+
+    > .minghao-content-body {
+      height: 100%;
+      min-height: 0;
+      overflow-y: auto;
+      overscroll-behavior-y: contain;
+    }
+  }
+
+  .slidev-layout:has(> .minghao-scroll-composition) {
+    grid-template-rows: minmax(0, 1fr);
+  }
+
+  .minghao-scroll-composition {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    max-height: 100%;
+    min-width: 0;
+  }
+
+  .minghao-scroll-title {
+    flex: none;
+  }
+
+  .minghao-scroll-body {
+    min-height: 0;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    display: flow-root;
+  }
+
+  .minghao-scroll-title:has(+ .minghao-scroll-subtitle) > h1 {
+    margin-bottom: 0.5rem;
+  }
+
+  .slidev-layout .minghao-scroll-subtitle > p:first-child {
+    margin-top: 0;
+    opacity: 0.5;
+    margin-bottom: 1rem;
+  }
+
+  .slidev-layout.fact .minghao-scroll-subtitle > p:first-child {
+    @apply font-700 text-2xl;
+  }
+
+  .slidev-layout.quote .minghao-scroll-title:has(+ .minghao-scroll-subtitle) > h1 {
+    margin-bottom: 1.5rem;
+  }
 }

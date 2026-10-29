@@ -1,7 +1,11 @@
+<script setup lang="ts">
+import ScrollableContent from '../components/ScrollableContent'
+</script>
+
 <template>
   <div class="slidev-layout section w-full h-full grid">
-    <div class="my-auto text-center">
+    <ScrollableContent class="my-auto text-center">
       <slot />
-    </div>
+    </ScrollableContent>
   </div>
 </template>
