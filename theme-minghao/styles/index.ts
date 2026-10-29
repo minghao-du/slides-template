@@ -1,7 +1,3 @@
-import '@fontsource/pt-serif/latin-400.css'
-import '@fontsource/pt-serif/latin-400-italic.css'
-import '@fontsource/pt-serif/latin-700.css'
-import '@fontsource/pt-serif/latin-700-italic.css'
 import '@fontsource/pt-mono/latin-400.css'
 import '@slidev/client/styles/layouts-base.css'
 import './layouts.css'

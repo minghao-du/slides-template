@@ -1,6 +1,7 @@
 ---
 theme: ../../theme-minghao
 layout: cover
+colorSchema: light
 background: /assets/landscape.svg
 themeConfig:
   primary: '#4d7534'
@@ -93,3 +94,69 @@ class: "text-center"
 # Learn More
 
 [Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
+
+---
+
+# Macroevolutionary Models 宏观演化模型
+
+Mixed text: 中文楷体与 English Helvetica
+
+- 中文正文：物种在时间与空间中的变化。
+- English prose: Models describe patterns of evolutionary change.
+- Mixed list: 比较模型 with local fonts and [a local reference](/1).
+
+| Term | Translation |
+| --- | --- |
+| Evolution | 演化 |
+| Species | 物种 |
+
+```ts
+const label = 'Evolution 演化'
+```
+
+---
+
+# Macroevolutionary Models and Comparative Methods 宏观演化模型与比较方法
+
+A two-line heading with a subtitle
+
+- The title keeps its font size and moves the band downward.
+- The body follows the title instead of using a fixed vertical position.
+
+---
+titleBand: false
+---
+
+# A Page Without the Band
+
+The page-level option keeps the title and body spacing.
+
+## A body heading
+
+Reusable theme defaults can be overridden for one slide.
+
+---
+
+This page starts with a paragraph and has no page title or band.
+
+# A Heading Inside the Body
+
+A later heading stays in the body.
+
+---
+
+# The Page Title
+
+Only the opening heading receives a band.
+
+# A Second Heading
+
+A second level-one heading does not create another band.
+
+---
+layout: intro
+---
+
+# Introduction
+
+The intro layout keeps its original composition.

@@ -17,8 +17,8 @@
     "defaults": {
       "fonts": {
         "mono": "PT Mono",
-        "sans": "PT Serif",
-        "serif": "PT Serif",
+        "sans": "Helvetica, Arial, \"Kaiti SC\", STKaiti, KaiTi, \"\u6977\u4f53\", sans-serif",
+        "serif": "Helvetica, Arial, \"Kaiti SC\", STKaiti, KaiTi, \"\u6977\u4f53\", sans-serif",
         "italic": true,
         "weights": "400, 700",
         "provider": "none"
@@ -29,7 +29,6 @@
     "@slidev/types": "53.0.0",
     "codemirror-theme-vars": "^0.1.2",
     "prism-theme-vars": "^0.2.4",
-    "@fontsource/pt-serif": "5.3.0",
     "@fontsource/pt-mono": "5.3.0"
   },
   "contributors": [

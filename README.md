@@ -49,7 +49,7 @@ themeConfig:
 ---
 ```
 
-The theme bundles PT Serif and PT Mono through Fontsource and disables remote font loading by default. Keep new images, fonts, and other runtime assets local if the presentation must work offline. The bundled fonts cover Latin text; add appropriate local fonts for other writing systems.
+The theme uses system Helvetica (Arial fallback) for Latin text and system Kai fonts for Chinese. PT Mono is bundled for code; remote font loading is disabled. Minghao’s Mac is the primary font reference. Other devices may use fallback fonts. See the [theme guide](./theme-minghao/README.md) for title bands, font requirements, and PDF export. Keep runtime assets local for offline use.
 
 Use the example as a design reference. Keep presentation-specific content in each deck and reusable design changes in the theme.
 
