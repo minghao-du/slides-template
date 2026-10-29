@@ -91,10 +91,11 @@
   --slidev-theme-title-band: #dceef7;
   --slidev-theme-title-band-height: 8px;
   --slidev-theme-title-band-gap: 10px;
-  --slidev-theme-content-gap: 20px;
+  --slidev-theme-title-band-offset-y: -6px;
+  --slidev-theme-content-gap: -2px;
   --slidev-theme-content-padding-x: 3.5rem;
   --slidev-theme-content-padding-y: 2.5rem;
-  --slidev-theme-title-padding-top: 18px;
+  --slidev-theme-title-padding-top: 29px;
 }
 
 .slidev-layout.minghao-content {
@@ -118,6 +119,7 @@
   width: 100%;
   height: var(--slidev-theme-title-band-height);
   margin-top: var(--slidev-theme-title-band-gap);
+  transform: translateY(var(--slidev-theme-title-band-offset-y));
   background: var(--slidev-theme-title-band);
 }
 
@@ -137,7 +139,8 @@
 }
 
 .minghao-with-title > .minghao-content-main > .minghao-content-body {
-  padding-top: var(--slidev-theme-content-gap);
+  padding-top: max(0px, var(--slidev-theme-content-gap));
+  margin-top: min(0px, var(--slidev-theme-content-gap));
 }
 
 .minghao-content-body > :first-child {

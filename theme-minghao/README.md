@@ -55,12 +55,17 @@ Override these variables in a deck's `style.css` to tune the design. Values refe
   --slidev-theme-title-band: #dceef7;
   --slidev-theme-title-band-height: 8px;
   --slidev-theme-title-band-gap: 10px;
-  --slidev-theme-content-gap: 20px;
+  --slidev-theme-title-band-offset-y: -3px;
+  --slidev-theme-content-gap: -2px;
   --slidev-theme-content-padding-x: 3.5rem;
   --slidev-theme-content-padding-y: 2.5rem;
-  --slidev-theme-title-padding-top: 18px;
+  --slidev-theme-title-padding-top: 29px;
 }
 ```
+
+The band offset moves only the decoration without changing title or body positions. Negative values move it upward.
+
+The content gap supports signed values. Positive values add padding above the body; negative values move the body upward relative to the title area. The current gap is -2px.
 
 The example uses `colorSchema: light`. The current design is validated in light mode; dark mode color adaptation is outside this version's scope.
 
