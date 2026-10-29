@@ -25,7 +25,7 @@ The build writes a complete static website into `preview/`. This directory is ig
 ## Offline Assets
 
 - `public/assets/landscape.svg` is original, text-based example artwork and is committed with the source. Slidev copies `public/` into the preview. Reference these files as `/assets/landscape.svg` in frontmatter.
-- PT Mono is bundled through Fontsource. Helvetica, Arial, and Chinese Kai fonts come from the local system; no fonts load from a CDN. Other devices may render different fallback fonts.
+- STKaiti is stored in the theme and bundled for Chinese; PT Mono is bundled through Fontsource for code. Helvetica and Arial come from the local system. No fonts load from a CDN.
 - Documentation links on the last slide require internet access only if opened. They are not required to render the presentation.
 
 Installation requires network access. After installation, both rebuilding this example and viewing its saved preview can run offline. Keep the full `preview/` directory together and serve it locally; opening `index.html` directly is not supported. You can also serve that directory using another local static web server with SPA fallback.

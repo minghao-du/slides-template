@@ -49,7 +49,7 @@ themeConfig:
 ---
 ```
 
-The theme uses system Helvetica (Arial fallback) for Latin text and system Kai fonts for Chinese. PT Mono is bundled for code; remote font loading is disabled. Minghao’s Mac is the primary font reference. Other devices may use fallback fonts. See the [theme guide](./theme-minghao/README.md) for title bands, font requirements, and PDF export. Keep runtime assets local for offline use.
+The theme uses system Helvetica (Arial fallback) for Latin text and bundled STKaiti for Chinese. No Chinese system font installation is needed. PT Mono is bundled for code; remote font loading is disabled. Minghao’s Mac is the primary font reference. Other devices may use fallback fonts. See the [theme guide](./theme-minghao/README.md) for title bands, font requirements, and PDF export. Keep runtime assets local for offline use.
 
 Use the example as a design reference. Keep presentation-specific content in each deck and reusable design changes in the theme.
 

@@ -22,9 +22,9 @@ Requires Slidev 53 or later and Node.js 22.18+ (22.x) or 24.11+. Layouts include
 
 ## Fonts and Backgrounds
 
-All layouts use Helvetica for Latin text, with Arial as the first fallback. Chinese characters fall through to `Kaiti SC`, `STKaiti`, `KaiTi`, or `楷体`, then the system sans-serif font. Install or enable a Kai font on the presenting Mac. PT Mono is bundled through Fontsource for code. Remote font loading is disabled; no proprietary font files are distributed.
+All layouts use Helvetica for Latin text, with Arial as the first fallback. Chinese text uses the bundled **STKaiti Regular v1.02**, followed by system Kai fonts for any missing glyphs. No system font installation is required for STKaiti. PT Mono is bundled through Fontsource for code. Remote font loading is disabled.
 
-The primary acceptance environment is Minghao's Mac. Other systems may use different fallback fonts; identical typography across devices is not guaranteed. Check actual rendered fonts in browser developer tools, including Chinese glyphs, before presenting or exporting. Missing Kai fonts may produce ordinary system Chinese text.
+The unmodified font and provenance notes are stored in [`fonts/stkaiti/`](./fonts/stkaiti/). Vite copies the font into each production build. This is a proprietary font from the user-selected source, which supplies no redistribution license; it is not covered by this repository's MIT license. Public redistribution or web hosting requires appropriate rights. Regular is bundled; browsers synthesize bold or italic as needed. Latin typography can still differ on systems without Helvetica or Arial.
 
 ## Content Titles
 
@@ -52,7 +52,7 @@ Override these variables in a deck's `style.css` to tune the design. Values refe
   --slidev-theme-content-gap: 20px;
   --slidev-theme-content-padding-x: 3.5rem;
   --slidev-theme-content-padding-y: 2.5rem;
-  --slidev-theme-title-padding-top: 14px;
+  --slidev-theme-title-padding-top: 18px;
 }
 ```
 
@@ -69,7 +69,3 @@ The cover uses a solid green background by default. Override `background` with a
 ## Attribution and License
 
 Based on the Seriph theme. MIT License © 2021 Anthony Fu and the Slidev.js Team. See the repository [LICENSE](../LICENSE). [CHANGELOG.md](./CHANGELOG.md) preserves upstream history and original names; it does not describe releases of this personal fork.
-
-## Font Verification on the Reference Mac
-
-During the 2026-10-29 implementation check, Chrome rendered Latin text in Helvetica and Chinese text in PingFang SC because no configured Kai font was available. Enable or install a licensed Kai font and rerun the browser/PDF checks before accepting the Chinese typography. This fallback preserves readable text but does not satisfy the intended Kai appearance.

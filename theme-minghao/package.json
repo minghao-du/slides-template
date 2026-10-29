@@ -17,8 +17,8 @@
     "defaults": {
       "fonts": {
         "mono": "PT Mono",
-        "sans": "Helvetica, Arial, \"Kaiti SC\", STKaiti, KaiTi, \"\u6977\u4f53\", sans-serif",
-        "serif": "Helvetica, Arial, \"Kaiti SC\", STKaiti, KaiTi, \"\u6977\u4f53\", sans-serif",
+        "sans": "Helvetica, Arial, \"Minghao STKaiti\", STKaiti, \"Kaiti SC\", KaiTi, \"\u6977\u4f53\"",
+        "serif": "Helvetica, Arial, \"Minghao STKaiti\", STKaiti, \"Kaiti SC\", KaiTi, \"\u6977\u4f53\"",
         "italic": true,
         "weights": "400, 700",
         "provider": "none"
