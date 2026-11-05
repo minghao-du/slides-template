@@ -1,5 +1,5 @@
 :root {
-  --slidev-theme-primary: #5d8392;
+  --slidev-theme-primary: #4d7534;
 }
 
 .slidev-layout {
@@ -210,3 +210,80 @@
     margin-bottom: 1.5rem;
   }
 }
+
+/* ==========================================================================
+   Academic Minimalist Table Styling (Style 1)
+   Optimized for slide readability: compact density, refined three-line rule,
+   subtle zebra striping, and polished inline code.
+   ========================================================================== */
+
+.slidev-layout table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  border-top: 2px solid #334155;
+  border-bottom: 2px solid #334155;
+  text-align: left;
+}
+
+/* Honor Markdown column alignments (:---:, ---:, :---) */
+.slidev-layout th[align="center"],
+.slidev-layout td[align="center"] {
+  text-align: center;
+}
+
+.slidev-layout th[align="right"],
+.slidev-layout td[align="right"] {
+  text-align: right;
+}
+
+.slidev-layout th[align="left"],
+.slidev-layout td[align="left"] {
+  text-align: left;
+}
+
+.slidev-layout thead th {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-weight: 600;
+  padding: 5px 8px;
+  border-bottom: 1.5px solid #64748b;
+  letter-spacing: 0.01em;
+}
+
+.slidev-layout tbody td {
+  padding: 3.5px 8px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #334155;
+}
+
+.slidev-layout tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.slidev-layout tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.slidev-layout tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Inline elements inside slide tables */
+.slidev-layout table code {
+  font-size: 0.9em;
+  padding: 0.1em 0.35em;
+  background-color: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 3px;
+  color: #1e293b;
+  font-family: var(--slidev-code-font-family, monospace);
+}
+
+.slidev-layout table strong {
+  font-weight: 600;
+  color: #0f172a;
+}
+

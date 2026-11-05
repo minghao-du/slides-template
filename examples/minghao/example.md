@@ -4,7 +4,7 @@ layout: cover
 colorSchema: light
 background: /assets/landscape.svg
 themeConfig:
-  primary: '#4d7534'
+  primary: '#1e3a5f'
 ---
 
 # Minghao
