@@ -32,8 +32,9 @@ The theme provides built-in inline highlight components for emphasizing text in 
 
 - `<Red>text</Red>`: Highlights text with bold red styling (`text-red-600 font-bold`).
 - `<Purple>text</Purple>`: Highlights text with bold purple styling (`text-purple-600 font-bold`).
+- `<Blue>text</Blue>`: Highlights text with bold blue styling (`text-blue-600 font-bold`).
 
-Both components can be used directly inside Markdown slide contents without manual imports.
+These components can be used directly inside Markdown slide contents without manual imports.
 
 ## Fonts and Backgrounds
 
