@@ -103,6 +103,7 @@ Mixed text: 中文楷体与 English Helvetica
 
 - 中文正文：物种在时间与空间中的变化。
 - English prose: Models describe patterns of evolutionary change.
+- Inline highlights: Use <Red>Red for primary highlights</Red> and <Purple>Purple for secondary highlights</Purple>.
 - Mixed list: 比较模型 with local fonts and [a local reference](/1).
 
 | Term | Translation |

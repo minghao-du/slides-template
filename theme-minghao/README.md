@@ -26,6 +26,15 @@ Press `P` to toggle drawing mode in any presentation using this theme. Press `Es
 
 The shortcut is defined in [`setup/shortcuts.ts`](./setup/shortcuts.ts). Restart the development server after adding the setup file, or rebuild a static preview to include it.
 
+## Inline Highlights
+
+The theme provides built-in inline highlight components for emphasizing text in slide contents:
+
+- `<Red>text</Red>`: Highlights text with bold red styling (`text-red-600 font-bold`).
+- `<Purple>text</Purple>`: Highlights text with bold purple styling (`text-purple-600 font-bold`).
+
+Both components can be used directly inside Markdown slide contents without manual imports.
+
 ## Fonts and Backgrounds
 
 All layouts use Helvetica for Latin text, with Arial as the first fallback. Chinese text uses the bundled **STKaiti Regular v1.02**, followed by system Kai fonts for any missing glyphs. No system font installation is required for STKaiti. PT Mono is bundled through Fontsource for code. Remote font loading is disabled.
